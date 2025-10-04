@@ -1,0 +1,1147 @@
+/* CSS Variables for consistent font family across the website */
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+/* Main container styles - controls overall layout and overflow */
+.main-container {
+  overflow: hidden;
+}
+
+/* Universal box-sizing for consistent element sizing */
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+/* Remove outline from form elements for cleaner appearance */
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+/* Main container layout - centered with max width */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Hero section container - full width banner area */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: auto;
+  min-height: 909px;
+}
+
+/* Main hero section with gradient background */
+.hero-section-1 {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  height: 100%;
+  min-height: 909px;
+  background: linear-gradient(231.02deg, #ffe7eb, #ffbfc9);
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Group container for image and stats card */
+.group {
+  position: absolute;
+  width: 633.874px;
+  height: 727.366px;
+  top: 190px;
+  right: 40px;
+  z-index: 2;
+}
+
+/* Stats card showing resume count */
+.frame-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  position: relative;
+  width: 270.664px;
+  height: 133.427px;
+  margin: 544px 0 0 363px;
+  padding: 30px;
+  background: #ffffff;
+  z-index: 4;
+  border-radius: 10px;
+}
+
+/* Icon/image in stats card */
+.mask-group {
+  flex-shrink: 0;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/xRRB5GGu1a.png) no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}
+
+/* Container for stats text */
+.frame-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  width: 124px;
+  z-index: 6;
+}
+
+/* Number in stats - large bold text */
+.plus {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 36px;
+  color: #000000;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 7;
+}
+
+/* Description text in stats card */
+.online-resume-created {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 124px;
+  min-width: 0;
+  height: 40px;
+  color: #666666;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20.4px;
+  text-align: left;
+  text-transform: capitalize;
+  z-index: 8;
+}
+
+/* Background image in hero section */
+.group-4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/5FA6Z755hR.png) no-repeat center;
+  background-size: contain;
+  z-index: 3;
+}
+
+/* Main content container in hero section */
+.frame-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 38px;
+  position: absolute;
+  width: 620px;
+  height: 510px;
+  top: 228px;
+  left: 100px;
+  z-index: 9;
+}
+
+/* Main headline text */
+.resume-deserves-yes {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  z-index: 10;
+}
+
+/* First part of headline - black text */
+.your-resume {
+  position: relative;
+  color: #000000;
+  font-family: Figtree, var(--default-font-family);
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/* Second part of headline - red accent text */
+.deserves-yes {
+  position: relative;
+  color: #fa1239;
+  font-family: Figtree, var(--default-font-family);
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/* Third part of headline - black text */
+.make-it-happen {
+  position: relative;
+  color: #000000;
+  font-family: Figtree, var(--default-font-family);
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/* Description paragraph below headline */
+.resume-upgrade {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  width: 485px;
+  height: auto;
+  min-height: 136px;
+  color: #000000;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  text-transform: capitalize;
+  z-index: 11;
+}
+
+/* Container for action buttons */
+.frame-6 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 24px;
+  position: relative;
+  width: 383px;
+  z-index: 12;
+}
+
+/* Primary button - Resume Packages */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 202px;
+  height: 46px;
+  padding: 14px 22px;
+  background: #ffffff;
+  border: 1px solid #fa1239;
+  z-index: 13;
+  border-radius: 30px;
+  box-shadow: 0 0 12px 0 rgba(250, 18, 57, 0.58);
+}
+
+/* Text inside primary button */
+.contact {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 22px;
+  color: #fa1239;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 14;
+}
+
+/* Secondary button - Contact Us */
+.buttons-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 157px;
+  height: 46px;
+  padding: 14px 22px;
+  background: #fa1239;
+  z-index: 15;
+  border-radius: 30px;
+  box-shadow: 0 0 12px 0 rgba(250, 18, 57, 0.58);
+}
+
+/* Text inside secondary button */
+.contact-8 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 22px;
+  color: #ffffff;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 16;
+}
+
+/* Decorative orange line element */
+.group-9 {
+  flex-shrink: 0;
+  position: absolute;
+  width: 363px;
+  height: 17px;
+  top: 28%; /* Fixed position to align with orange background */
+  left: 0;
+  z-index: 17;
+}
+
+/* First part of decorative line */
+.vector {
+  position: relative;
+  width: 269.179px;
+  height: 8.997px;
+  margin: -1.5px 0 0 47.899px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/xrTaNA3kyr.png) no-repeat center;
+  background-size: cover;
+  z-index: 18;
+}
+
+/* Second part of decorative line */
+.vector-a {
+  position: relative;
+  width: 363.296px;
+  height: 11.989px;
+  margin: -1px 0 0 -0.18px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/7KkTG6jgz0.png) no-repeat center;
+  background-size: cover;
+  z-index: 19;
+}
+
+/* Rating card showing 4.9 stars */
+.frame-b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  position: absolute;
+  width: 350px;
+  height: 117px;
+  top: 585px;
+  right: 361px;
+  padding: 20px 15px;
+  background: rgba(255, 255, 255, 0.79);
+  z-index: 20;
+  border-radius: 10px;
+  backdrop-filter: blur(45.5px);
+}
+
+/* Rating number - large green text */
+.rating {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 77px;
+  color: #1cb098;
+  font-family: Inter, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77px;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 21;
+}
+
+/* Container for star rating and label */
+.frame-c {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 11px;
+  position: relative;
+  width: 199px;
+  z-index: 22;
+}
+
+/* Container for star icons */
+.frame-d {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 4px;
+  position: relative;
+  width: 101.613px;
+  z-index: 23;
+}
+
+/* Individual star icons - vector graphics */
+.vector-e,
+.vector-f,
+.vector-10,
+.vector-11,
+.vector-12 {
+  flex-shrink: 0;
+  position: relative;
+  width: 17.123px;
+  height: 16.353px;
+  background-size: cover;
+  z-index: 24;
+}
+
+/* Individual star icon backgrounds */
+.vector-e { background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/8b45oh9pZY.png) no-repeat center; }
+.vector-f { background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/qrs7XW1K15.png) no-repeat center; }
+.vector-10 { background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/5ZMmSbXp7j.png) no-repeat center; }
+.vector-11 { background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/62WLwNuOW5.png) no-repeat center; }
+.vector-12 { background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/vY8QdYXpd8.png) no-repeat center; }
+
+/* Rating label text */
+.instructor-rating {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 29px;
+  color: #000000;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 29;
+}
+
+/* Navigation Styles - Top header section */
+.frame-13 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 30;
+}
+
+/* Navigation container with logo and menu */
+.frame-14 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 100px;
+  padding: 0 100px;
+  z-index: 31;
+}
+
+/* Logo image */
+.group-15 {
+  flex-shrink: 0;
+  position: relative;
+  width: 231.174px;
+  height: 58px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/fCWUkUfUwy.png) no-repeat center;
+  background-size: contain;
+  z-index: 32;
+}
+
+/* Navigation menu container */
+.frame-16 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 24px;
+  position: relative;
+  width: auto;
+  z-index: 33;
+}
+
+/* Individual navigation item containers */
+.frame-17,
+.frame-19,
+.frame-1c,
+.frame-1f,
+.frame-22 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 4px;
+  position: relative;
+  padding: 10px;
+  z-index: 34;
+}
+
+/* Navigation link containers */
+.frame-18,
+.frame-1a,
+.frame-1d,
+.frame-20,
+.frame-23 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  z-index: 35;
+}
+
+/* Navigation link text */
+.home,
+.home-1b,
+.home-1e,
+.home-21,
+.home-24 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 22px;
+  color: #282828;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 36;
+}
+
+/* CTA button container in navigation */
+.frame-25 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 24px;
+  position: relative;
+  width: 147px;
+  z-index: 49;
+}
+
+/* Get a quote button in navigation */
+.buttons-26 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 147px;
+  height: 46px;
+  padding: 14px 22px;
+  background: #fa1239;
+  z-index: 50;
+  border-radius: 30px;
+  box-shadow: 0 0 12px 0 rgba(250, 18, 57, 0.58);
+}
+
+/* Text inside navigation CTA button */
+.contact-27 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 22px;
+  color: #ffffff;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 51;
+}
+
+/* What You Get Section - Services showcase */
+.frame-28 {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: auto;
+  min-height: 708px;
+  background: #ffffff;
+  z-index: 52;
+  overflow: hidden;
+  padding: 50px 0;
+}
+
+/* Main container for services section */
+.frame-29 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 50px;
+  position: relative;
+  width: 1255px;
+  margin: 0 auto;
+  z-index: 55;
+}
+
+/* Header section for services */
+.frame-2a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 26px;
+  position: relative;
+  width: 1240px;
+  z-index: 56;
+}
+
+/* Badge container for "What you Get" */
+.frame-2b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 25px;
+  position: relative;
+  min-width: 0;
+  z-index: 57;
+}
+
+/* "What you Get" badge styling */
+.frame-2c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 154px;
+  padding: 10px 20px;
+  background: rgba(253, 146, 164, 0.3);
+  z-index: 58;
+  border-radius: 6px;
+}
+
+/* "What you Get" text */
+.what-you-get {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 22px;
+  color: #000000;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 59;
+}
+
+/* Main headline container for services */
+.frame-2d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 25px;
+  position: relative;
+  min-width: 0;
+  z-index: 60;
+}
+
+/* Services section main headline */
+.not-just-applicant {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 31px;
+  color: #000000;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 61;
+}
+
+/* Container for service cards grid */
+.frame-2e {
+  display: flex;
+  align-items: stretch;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 20px;
+  position: relative;
+  min-width: 0;
+  z-index: 62;
+  justify-content: space-between;
+}
+
+/* Individual service card containers */
+.frame-2f,
+.frame-32,
+.frame-35,
+.frame-39 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex: 1;
+  min-width: 280px;
+  max-width: 300px;
+  gap: 24px;
+  position: relative;
+  height: 450px;
+  padding: 20px;
+  background: #ffffff;
+  z-index: 63;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* Service card content containers */
+.frame-30,
+.frame-33,
+.frame-36,
+.frame-3a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 18px;
+  position: relative;
+  z-index: 64;
+}
+
+/* Service icon containers */
+.cms,
+.cms-34,
+.cms-37,
+.cms-3b {
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  z-index: 65;
+  overflow: hidden;
+}
+
+/* Service icon images */
+.group-31,
+.g,
+.group-38,
+.g-3c {
+  position: relative;
+  width: 200px;
+  height: 149.024px;
+  margin: 25.488px auto 0;
+  background-size: 100% 100%;
+  z-index: 66;
+}
+
+/* Individual service icon backgrounds */
+.group-31 { background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/rdQzGNW8xZ.png) no-repeat center; }
+.g { background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/5NSjJhDR5K.png) no-repeat center; }
+.group-38 { background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/VS5kneL2Ps.png) no-repeat center; }
+.g-3c { background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-03/SxguF167cD.png) no-repeat center; }
+
+/* Service title text */
+.resume-passes-ats,
+.cover-letter-gets-read,
+.linkedin-profile,
+.interview-confidence {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  color: #000000;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  z-index: 67;
+}
+
+/* Service description text */
+.keyword-optimized-resume,
+.cover-letter,
+.attract-eyes,
+.interview-preparation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: #000000;
+  font-family: Figtree, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  z-index: 68;
+}
+
+/* Background overlay container */
+.group-3e {
+  position: absolute;
+  width: 100%;
+  height: 862px;
+  top: -74px;
+  left: 0;
+  z-index: 53;
+}
+
+/* Background overlay rectangle */
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 862px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  opacity: 0.8;
+  z-index: 54;
+}
+
+/* Mobile Navigation - Hamburger menu toggle button */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 100;
+}
+
+/* Hamburger menu lines */
+.mobile-menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #282828;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile navigation overlay menu */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 99;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Active state for mobile menu */
+.mobile-nav.active {
+  display: flex;
+}
+
+/* Close button for mobile menu */
+.mobile-nav-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #282828;
+  z-index: 100;
+}
+
+/* Mobile navigation menu items */
+.mobile-nav-item {
+  font-size: 24px;
+  color: #282828;
+  text-decoration: none;
+  font-family: Figtree, var(--default-font-family);
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+/* Hover state for mobile menu items */
+.mobile-nav-item:hover {
+  color: #fa1239;
+}
+
+/* Responsive Design - Large desktop screens */
+@media (max-width: 1440px) {
+  .main-container {
+    max-width: 100%;
+  }
+  
+  .frame-29 {
+    width: 90%;
+    max-width: 1255px;
+  }
+  
+  .frame-2a {
+    width: 100%;
+  }
+}
+
+/* Responsive Design - Medium desktop screens */
+@media (max-width: 1280px) {
+  .frame-2e {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .frame-2f,
+  .frame-32,
+  .frame-35,
+  .frame-39 {
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    min-width: 280px;
+  }
+}
+
+/* Responsive Design - Tablet landscape */
+@media (max-width: 1024px) {
+  .hero-section-1 {
+    min-height: 800px;
+  }
+  
+  .frame-5 {
+    width: 50%;
+    left: 5%;
+  }
+  
+  .group {
+    width: 50%;
+    right: 5%;
+  }
+  
+  .frame-b {
+    right: 25%;
+  }
+  
+  .frame-14 {
+    padding: 0 5%;
+  }
+}
+
+/* Responsive Design - Tablet portrait */
+@media (max-width: 900px) {
+  .frame-2f,
+  .frame-32,
+  .frame-35,
+  .frame-39 {
+    flex: 0 1 100%;
+    max-width: 400px;
+  }
+}
+
+/* Responsive Design - Mobile landscape */
+@media (max-width: 768px) {
+  .frame-14 {
+    padding: 0 5%;
+  }
+  
+  /* Hide desktop navigation on mobile */
+  .frame-16 {
+    display: none;
+  }
+  
+  /* Show hamburger menu on mobile */
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  /* Hide desktop CTA button on mobile */
+  .frame-25 {
+    display: none;
+  }
+  
+  /* Mobile layout for hero content */
+  .frame-5 {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 150px;
+    margin-bottom: 50px;
+  }
+  
+  /* Mobile layout for image group */
+  .group {
+    position: relative;
+    width: 90%;
+    right: auto;
+    left: 5%;
+    top: 0;
+    margin-top: 50px;
+  }
+  
+  /* Mobile layout for rating card */
+  .frame-b {
+    position: relative;
+    width: 90%;
+    right: auto;
+    left: 5%;
+    top: 0;
+    margin-top: 30px;
+  }
+  
+  /* Mobile layout for hero section */
+  .hero-section-1 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 50px;
+  }
+  
+  /* Mobile layout for decorative line */
+  .group-9 {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Responsive Design - Mobile portrait */
+@media (max-width: 480px) {
+  /* Responsive font size for headline */
+  .resume-deserves-yes {
+    font-size: clamp(24px, 8vw, 32px);
+  }
+  
+  /* Stack buttons vertically on mobile */
+  .frame-6 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Full width buttons on mobile */
+  .buttons,
+  .buttons-7 {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  /* Reduced padding on mobile */
+  .frame-14 {
+    padding: 0 20px;
+  }
+  
+  /* Full width container on mobile */
+  .frame-29 {
+    width: 95%;
+  }
+  
+  /* Full width service cards on mobile */
+  .frame-2f,
+  .frame-32,
+  .frame-35,
+  .frame-39 {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+}
